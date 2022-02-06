@@ -30,3 +30,6 @@ This is my independent project for week 3. It is my third project covering three
 ##### Link to my git hub pages
 
 (https://github.com/han254/week3-IP)
+
+## License
+Copyright (C) 2022 [Click here to view License](LICENSE)
