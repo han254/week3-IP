@@ -1,38 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
+
     <title>QUIZ BOARD</title>
 </head>
+
 <body>
-<div class="container" id="Question">
-    <div class="question-header">
-        <h2 id="quiz">Query Texts</h2> 
-        <ul>
-            <li>
-                <input type="radio" name="answer-list" id="a" class="answer-list">
-                <label for="a" id="a_text">Answer-list</label>
-            </li>
-            <li>
-                <input type="radio" name="answer-list" id="a" class="answer-list">
-                <label for="b" id="b_text">Answer-list</label>
-            </li>
-            <li>
-                <input type="radio" name="answer-list" id="a" class="answer-list">
-                <label for="c" id="c_text">Answer-list</label>
-            </li>
-            <li>
-                <input type="radio" name="answer-list" id="a" class="answer-list">
-                <label for="d" id="d_text">Answer-list</label>
-            </li>
-                    </ul>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 bg-primary">
+                <h2 id="quiz">Query Texts</h2>
+                <h2>QUIZ BOARD</h2>
+                <form id="form" onsubmit="userAnswers()">
+                    <div>
+                        <p>1. If we don't want to allow a floating div to the left side of an element, which css
+                            property will we use ?</p>
+                        <p><input type="radio" name="quiz1" value="Padding">A. padding </p>
+                        <p><input type="radio" name="quiz1" value="Margin">B. margin</p>
+                        <p><input type="radio" name="quiz1" value="Float">C. float </p>
+                        <p><input type="radio" name="quiz1" value="Clear" checked>D. clear </p>
+                    </div><br>
+                    <div>
+                        <p>2. If we want to wrap a block of text around an image, which css property will we use ?</p>
+                        <p><input type="radio" name="quiz2" value="push">A. push </p>
+                        <p><input type="radio" name="quiz2" value="wrap" checked>B. wrap</p>
+                        <p><input type="radio" name="quiz2" value="float">C. float </p>
+                        <p><input type="radio" name="quiz2" value="align">D. align </p>
+                    </div> <br>
+                    <div>
+                        <p>3. Which of these represents the space between elements?</p>
+                        <p><input type="radio" name="quiz3" value="margin">A. margin </p>
+                        <p><input type="radio" name="quiz3" value="padding" checked>B. padding</p>
+                        <p><input type="radio" name="quiz3" value="width">C. float </p>
+                        <p><input type="radio" name="quiz3" value="size">D. size </p>
+                    </div> <br>
+                    <div>
+                        <p>4. Which of these is not an element selector?</p>
+                        <p><input type="radio" name="quiz4" value="ul">A. ul </p>
+                        <p><input type="radio" name="quiz4" value=".content" checked>B. .content</p>
+                        <p><input type="radio" name="quiz4" value="h1">C. h1 </p>
+                        <p><input type="radio" name="quiz4" value="p">D. p </p>
+                    </div> <br>
+                    <div>
+                        <p>5. Use the CSS ___ property on an element to prevent other elements from floating beside it.
+                        </p>
+                        <p><input type="radio" name="q5" value="clear" checked>A. clear </p>
+                        <p><input type="radio" name="q5" value="block">B. block</p>
+                        <p><input type="radio" name="q5" value="unfloat">C. unfloat </p>
+                        <p><input type="radio" name="q5" value="anchor">D. anchor</p>
+                    </div> <br>
+                    <button class="btn" type="submit">Submit</button>
+                </form>
+
+            </div>
+        </div>
     </div>
-    <button id="Submit">submit</button>
-</div>
+
     <script src="js/main.js"></script>
-    
+
 </body>
+
 </html>
