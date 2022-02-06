@@ -1,7 +1,7 @@
-// const quizData = {
-//   quiz1: "Clear",
-//   quiz2: "Float",
-// };
+const quizData = {
+  quiz1: "Clear",
+  quiz2: "Float",
+};
 
 // //listen to form submission and get user data
 // var userForm = document.getElementById("form");
