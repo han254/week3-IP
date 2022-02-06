@@ -3,13 +3,13 @@ const quizData = {
   quiz2: "Float",
 };
 
-// //listen to form submission and get user data
-// var userForm = document.getElementById("form");
-// userForm.addEventListener("submit", (e) => {
-//   e.preventDefault();
-//   var userData = new FormData(userForm);
-//   correctAnswer(userData);
-// });
+// listen to form submission and get user data
+var userForm = document.getElementById("form");
+userForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  var userData = new FormData(userForm);
+  correctAnswer(userData);
+});
 
 // // compare user's with correct answers
 // function correctAnswer(userData) {
