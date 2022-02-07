@@ -17,3 +17,12 @@ userForm.addEventListener("submit", (e) => {
 });
 
 //  compare user's with correct answers
+function correctAnswer(userData) {
+  for (let answer of userData) {
+    var userKey = answer[0];
+    var userValue = answer[1];
+    if (userValue === quizData[userKey]) {
+      score++;
+    }
+  }
+  
