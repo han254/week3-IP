@@ -8,7 +8,6 @@ const quizData = {
 var count = 0;
 var score = 0;
 
-
 // listen to form submission and get user data
 var userForm = document.getElementById("form");
 userForm.addEventListener("submit", (e) => {
@@ -27,4 +26,8 @@ function correctAnswer(userData) {
   }
 }
 // update score on correct answers
+Submit.addEventListener("click", () => {
+  const checkAnswer = getAnswer();
+  console.log({ checkAnswer, correct: quizData[count] });
+});
 // display the score to user
