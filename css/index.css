@@ -36,9 +36,7 @@ button{
     height: 40px;
      background-color: rgb(56, 123, 190);
      border-radius: 10px;
-
-
-}
-button:hover{
+    }
+.btn:hover{
     background-color: limegreen;
 } */
