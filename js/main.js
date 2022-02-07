@@ -17,17 +17,3 @@ userForm.addEventListener("submit", (e) => {
 });
 
 //  compare user's with correct answers
-function correctAnswer(userData) {
-  for (let answer of userData) {
-    var userKey = answer[0];
-    var userValue = answer[1];
-    var correctKey = quizData[1];
-    console.log(answer);
-  }
-}
-// update score on correct answers
-Submit.addEventListener("click", () => {
-  const checkAnswer = getAnswer();
-  console.log({ checkAnswer, correct: quizData[count] });
-});
-// display the score to user
