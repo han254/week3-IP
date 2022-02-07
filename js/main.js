@@ -25,4 +25,6 @@ function correctAnswer(userData) {
       score++;
     }
   }
-  
+  document.getElementById("score").innerText = scoreDiplay(score);
+  userForm.style.display = "none";
+}
