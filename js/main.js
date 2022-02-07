@@ -28,3 +28,16 @@ function correctAnswer(userData) {
   document.getElementById("score").innerText = scoreDiplay(score);
   userForm.style.display = "none";
 }
+// display the score to user
+function scoreDiplay(score) {
+  var score = (score / 5) * 100;
+  var message = "";
+  if (score < 50) {
+    message = "Poor score retake the quiz";
+  } else if (score < 80) {
+    message = "Average score keep it up!";
+  } else {
+    message = "Excellent!";
+  }
+  return score + "%: " + message;
+}
