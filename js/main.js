@@ -5,6 +5,9 @@ const quizData = {
   quiz4: ".content",
   quiz5: "clear",
 };
+var count = 0;
+var score = 0;
+
 
 // listen to form submission and get user data
 var userForm = document.getElementById("form");
@@ -24,7 +27,4 @@ function correctAnswer(userData) {
   }
 }
 // update score on correct answers
-
 // display the score to user
-if (totalScore < 50) {
-}
